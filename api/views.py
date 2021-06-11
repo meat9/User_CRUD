@@ -2,8 +2,8 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-from .serializers import BookSerializer,AuthorSerializer, UserSerializer
-from .models import Book, Author, User
+from .serializers import UserSerializer
+from .models import User
 from rest_framework import status
 import json
 from rest_framework.response import Response
